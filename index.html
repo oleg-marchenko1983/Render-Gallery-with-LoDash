@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Module9</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link id="link" rel="stylesheet" href="css/light-theme.css">
+</head>
+<body>
+  <div class="conteiner">
+    <header class="header">
+      <h1 class="header-logo">Movie Mate</h1>
+      <nav>  
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">BROWSE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">LOGIN</a>
+        </li>
+      </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="app">
+        <div class="app-sidebar">
+          <form id="form" class="search-form">
+            <input id="input" class="search-form-input" type="text" placeholder="Enter the name of movies ..."></input>
+            <button id="search-form-btn" class="search-form-btn" type="submit">search</button>
+          </form>
+          <div class="search-categories">
+            <button id="popular" class="search-categories-btn">popular</button>
+            <button id="top-rated" class="search-categories-btn">top rated</button>
+            <button id="upcoming" class="search-categories-btn">upcoming</button>
+          </div>
+          <div class="bg-theme">
+            <button id="light_button" class="search-categories-btn">light theme</button>
+            <button id="dark_button" class="search-categories-btn ">dark theme</button>
+</div>
+        </div>
+        <div class="movies-list">
+        </div>
+      </div>
+
+    
+
+      <script type="text/lodash-template" id="cards">
+    <div class="movie-list-item">
+          <div class="movie-card">
+            <span class="movie-card-rating"><%- rating %></span>
+            <img  class="movie-card-img" src="https://image.tmdb.org/t/p/w500<%- img %>" alt="movie-poster">
+            <div class="movie-info"
+              <h3 class="movie-info-title"><%- title %></h3>
+              <p class="movie-info-overview"><%- details %>...</p>
+              <p class="movie-info-release_date"><%- date %></p>
+          </div>
+          </div>
+        </div>
+  </script>
+           
+    </main>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.4/lodash.min.js"></script>
+  <script src="js/js.js"></script>
+</body>
+</html>
