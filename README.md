@@ -1,1 +1,1 @@
-# dz_js_9 Promis , Local Storage.
+# dz_js_9 Promise , Local Storage.
