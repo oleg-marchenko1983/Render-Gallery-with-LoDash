@@ -1,1 +1,2 @@
-# dz_js_9 Promise , Local Storage + Tamplate - Lodash
+
+In with Task I using Promise Local Storage + Template - Lodash
